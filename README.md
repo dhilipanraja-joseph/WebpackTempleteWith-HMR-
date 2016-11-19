@@ -4,7 +4,7 @@ Simple Webpack development template, with hot-module-replacement
 # Usage
 Install dependancies `npm install or npm i`.
 
-Run local server `npm run start`.
+To Run local server `npm run start or nodemon`.
 
 Open the browser to the address `http://localhost:3000`.
 
