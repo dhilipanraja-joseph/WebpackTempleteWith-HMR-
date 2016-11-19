@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server/app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack ./src/main ./built/bundle.js --module-bind 'css=style!css'"
   },
   "keywords": [],
   "author": "",

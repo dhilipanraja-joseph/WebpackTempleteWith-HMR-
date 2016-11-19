@@ -1,7 +1,6 @@
 console.log("loading webpack dev configuration");
 
 const webpack = require('webpack');
-const path = require('path');
 
 module.exports = {
   entry: [ // Multiple entries for dev and prod.
@@ -13,9 +12,9 @@ module.exports = {
     new webpack.NoErrorsPlugin()
   ],
   output: {
-    path: path.join(__dirname, '/build'),
+    filename: 'build.js', // Bundles the files from src directory into this single js file.
     publicPath: '/',
-    filename: 'bundle.js' // Bundles the files from src directory into this single js file.
+    path: __dirname + '/dist'
   },
   module: {
     loaders: [
